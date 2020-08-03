@@ -1,0 +1,18 @@
+##input: N for the matrix dimensions and X for the checker.
+##output: Integer for how many times "X" showed up in NXN matrix
+
+##questions to ask: can N be 0? can X be 0? any upper limit for N or X? The problem just said integers. Can they be negative then? (I doubt)
+
+
+##My 1st try
+
+def mul_find(N,X):
+  counter=0
+  for i in range(1,N+1):
+    if X % i == 0 and X // i <= N:
+       counter+=1
+       
+   return counter
+       
+  
+
