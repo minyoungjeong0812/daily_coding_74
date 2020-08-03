@@ -15,4 +15,22 @@ def mul_find(N,X):
    return counter
        
   
+## MY 2nd try (dealing with excursions: cannot find)
 
+def mul_find(N,X):
+  counter=0
+  
+  if N ==0:
+    return 0
+    
+  if N==1 and N!=X:
+    return 0
+  
+  for i in range(1,N+1):
+    if X % i == 0 and X // i <= N:
+       counter+=1
+    
+    else:
+       counter+=0
+    
+   return counter
