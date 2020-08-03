@@ -30,7 +30,4 @@ def mul_find(N,X):
     if X % i == 0 and X // i <= N:
        counter+=1
     
-    else:
-       counter+=0
-    
    return counter
